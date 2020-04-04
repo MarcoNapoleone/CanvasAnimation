@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    background: transparent linear-gradient(180deg, #F1FAEE 0%, #F1FAEE 63%, #FFFFFF 100%) 0 0 no-repeat padding-box;
+    background-size: auto 1200px;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    transition: all 5ms ease-in;
+}
+
+:root {
+    --button-size: 30px;
+    --v1-x: .7;
+    --v1-y: .3;
+    --v2-x: .3;
+    --v2-y: .7;
+    --canvas-width: 400px;
+}
+
+#cartesian-plane {
+    transform: translate(50%, -50%);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    position: absolute;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    top: 50%;
+    right: 50%;
+}
+
+#button-field {
+    height: var(--canvas-width);
+    width: var(--canvas-width);
+    transform: translate(50%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    pointer-events: none;
+}
+
+.vector {
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: var(--button-size);
+    border: 0;
+    pointer-events: all;
+    transition: none;
+}
+
+#v0 {
+    position: absolute;
+    bottom: calc(var(--button-size) / -2);
+    left: calc(var(--button-size) / -2);
+    background: #1d3557 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#v1 {
+    position: absolute;
+    bottom: calc(var(--v1-y) * 100%);
+    left: calc(var(--v1-x) * 100%);
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    background: #EDA9BE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#v2 {
+    position: absolute;
+    bottom: calc(var(--v2-y) * 100%);
+    left: calc(var(--v2-x) * 100%);
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    background: #a8dadc 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#v3 {
+    position: absolute;
+    top: calc(var(--button-size) / -2);
+    right: calc(var(--button-size) / -2);
+    background: #1d3557 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#draw-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+:root {
+    --top-bar-height: 80px;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    height: var(--top-bar-height);
+    width: auto;
+    align-items: center;
+}
+
+#top-bar-logo {
+    height: calc(var(--top-bar-height) - 30px);
+    width: calc(var(--top-bar-height) - 30px);
+    margin-left: 15px;
+}
+
+#top-bar-title {
+    font-size: 50px;
+    color: #1d3557;
+    font-family: 'Raleway SemiBold', sans-serif;
+    text-shadow: 0 3px 6px #00000029;
+}
+
+#sub-title {
+    font-size: 20px;
+    color: #1d3557;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 3px 6px #00000029;
+}

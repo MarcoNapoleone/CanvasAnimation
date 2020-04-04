@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Smoothie.js</title>
+    <link rel="icon" href="smoothieLogo.png">
+</head>
+<body>
+<div id="top-bar">
+    <div style="width: 20%;">
+        <img id="top-bar-logo" src="smoothieLogo.png" alt="top-logo">
+    </div>
+    <div style="width: 60%; text-align: center">
+        <span id="top-bar-title">
+        SMOOTHIE
+        </span>
+    </div>
+</div>
+<div style="text-align: center">
+    <span id="sub-title">
+        A Javascript Library To Easy Animate Canvas Elements
+    </span>
+</div>
+<div id="draw-container">
+    <canvas id="cartesian-plane"
+            height="400" width="400">
+    </canvas>
+    <div id="button-field">
+        <button id="v0" class="vector"></button>
+        <button id="v1" class="vector" draggable="true"></button>
+        <button id="v2" class="vector" draggable="true"></button>
+        <button id="v3" class="vector"></button>
+    </div>
+
+</div>
+<script src="../dist/main.js"></script>
+</body>
+</html>
